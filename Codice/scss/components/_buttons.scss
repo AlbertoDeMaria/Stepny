@@ -1,0 +1,59 @@
+.btn{
+    padding: 14px 28px;
+    border-radius: 380px;
+    gap: 8px;
+    border: 0px;
+
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 120%;
+
+    cursor: pointer;
+}
+
+.btn-white{
+    background-color: $white;
+    color: $dark-grey;
+    border: 1px solid $white;
+    
+    transition: .2s ease;
+
+    &:hover{
+        border: 1px solid $white;
+        background-color: transparent;
+        color: $white;
+        
+        transition: .2s ease;
+    }
+}
+
+.btn-border-white{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    
+    transition: .2s ease;
+}
+
+.btn-video{
+    width: 100%;
+    height: 70px;
+
+    font-size: 20px;
+}
+
+.btn-red{
+    background-color: $red;
+    color: $white;
+    border: 1px solid $red;
+
+
+    &:hover{
+        border: 1px solid $red;
+        background-color: transparent;
+        color: $red;
+        
+        transition: .2s ease;
+    }
+}

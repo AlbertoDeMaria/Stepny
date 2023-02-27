@@ -1,0 +1,69 @@
+.popup{
+    display: none;
+    padding: 45px clamp(50px, 10vw, 150px);
+    
+    height: 100vh;
+
+    background-image: url(../img/sfondo/bg\ white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .popup-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        div{
+            width: calc(100%/3);
+        }
+    }
+
+    .popup-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+
+        nav{
+            font-family: 'Tanker-Regular', sans-serif;
+            text-transform: uppercase;
+            flex-direction: column;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 110%;
+            row-gap: 32px;
+
+            .active{
+                color: $red;
+            }
+
+            li{
+                color: $dark-grey;
+
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+
+    }
+
+    .popup-footer{
+        position: absolute;
+        bottom: 30px;
+        left: 50px;
+        right: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        img{
+            width: 30px;
+            
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+}

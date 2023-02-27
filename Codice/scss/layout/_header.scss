@@ -1,0 +1,63 @@
+header{
+    margin: 45px clamp(50px, 10vw, 150px);
+    
+    height: 40px;
+    @include flexbox();
+
+    div{
+        width: calc(100%/3);
+    }
+
+    @include breakpoint(big-tablet) {
+        nav {
+          display: none;
+        }
+      
+        .cta-container a{
+          display: none;
+        }
+      
+        .menu-mobile {
+          display: block;
+        }
+    }
+}
+
+nav{
+    @include flexbox(center, left, row);
+
+    list-style: none;
+    column-gap: clamp(10px, 5vw, 65px);
+    font-weight: 400;
+    font-size: 16px;
+
+    li{
+        color: $grey;
+        transition: .1s ease;
+
+        &:hover{
+            color: $white;
+        }
+    }
+
+    .active{
+        color: $white;
+    }
+}
+
+.logo-container{
+    text-align: center;
+
+    img{
+        width: 40px;
+        transition: .3s ease;
+    }
+}
+
+.menu-mobile {
+    display: none;
+  }
+
+.cta-container{
+    text-align: right;
+}
