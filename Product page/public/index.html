@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single product page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <section class="left">
+            <img src="img/Frame 1171275405.png" class="primaryPhoto" alt="primary" id="primaryPhoto">
+            <div class="row">
+                <section class="col">
+                    <img src="img/Frame 1171275412.png" alt="photo">
+                </section>
+                <section class="col">
+                    <img src="img/Frame 1171275413.png" alt="photo">
+                </section>
+                <section class="col">
+                    <img src="img/Frame 1171275414.png" alt="photo">
+                </section>
+            </div>
+        </section>
+
+
+        <section class="right">
+            <p class="product-category">Home / Hoodie</p>
+            <p class="product-title" id="product-title">FELPA STEPNY LOGO</p>
+            <p class="product-price" id="product-price">€ 35</p>
+            
+            <div class="variation-container">
+                <div class="variation size-variation">
+                    <p class="variation-title">Size</p>
+                    <section class="variation-controllers-container">
+                        <button class="">S</button>
+                        <button class="">M</button>
+                        <button class="active">L</button>
+                        <button class="">XL</button>
+                        <button class="">XXL</button>
+                    </section>
+                </div>
+
+                <div class="variation size-variation">
+                    <p class="variation-title">Color</p>
+                    <section class="variation-controllers-container">
+                        <button class="active">White</button>
+                        <button class="">Black</button>
+                        <button class="">Red</button>
+                    </section>
+                </div>
+
+                <div class="variation size-variation">
+                    <p class="variation-title">Quantity</p>
+                    <section class="variation-controllers-container">
+                        <button>-</button>
+                        <input type="text" value="1" min="0">
+                        <button>+</button>
+                    </section>
+                </div>
+                <button class="red-btn">ADD TO CART</button>
+            </div>
+
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6a0f764aaf.js" crossorigin="anonymous"></script>
+</body>
+</html>
